@@ -1,4 +1,4 @@
 {
   "port": 6969,
-  "connectionString": "mongodb://localhost/CallPhone"
+  "mongoConnection": "mongodb://localhost/CallPhone"
 }
