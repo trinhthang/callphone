@@ -5,12 +5,13 @@ var bcrypt = require('bcrypt');
 const saltRounds = 10;
 
 var userSchema = new Schema({
-  id: {type: Number, required: true, unique: true},
-  username: {type: String, required: true, unique: true},
-  password: {type: String, required: true, unique: true},
-  email: {type: String, unique: true},
-  avatar: {type: String, default: ''},
-  createdDate: {type: Date, default: new Date().toISOString()}
+  id: { type: Number, required: true, unique: true },
+  username: { type: String, required: true, unique: true },
+  password: { type: String, required: true, unique: true },
+  email: { type: String, unique: true },
+  tel: { type: String, unique: true },
+  avatar: { type: String, default: '' },
+  createdDate: { type: Date, default: new Date().toISOString() }
 })
 
 userSchema.pre('save', function (next) {

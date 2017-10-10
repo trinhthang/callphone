@@ -10,7 +10,7 @@ var contactSchema = new Schema({
   relation: {type: String, default: ''},
   avatar: {type: String, default: ''},
   createdDate: {type: Date, default: new Date().toISOString()},
-  security: {type: Boolean, default: false},
+  onlyMe: {type: Boolean, default: false},
   createBy: {type: ObjectId, ref: 'users'}
 })
 
